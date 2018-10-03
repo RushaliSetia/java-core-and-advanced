@@ -3,9 +3,19 @@ package question2;
 public class JobApplication {
 
 	String userName;
-	int yearsOfExperience;
-	int currentSalary;
-	int expectedSalary;
+	int yearsOfExperience, currentSalary, expectedSalary;
+
+	public JobApplication() {
+		super();
+	}
+
+	public JobApplication(String userName, int yearsOfExperience, int currentSalary, int expectedSalary) {
+		super();
+		this.userName = userName;
+		this.yearsOfExperience = yearsOfExperience;
+		this.currentSalary = currentSalary;
+		this.expectedSalary = expectedSalary;
+	}
 
 	public String getUserName() {
 		return userName;
@@ -39,22 +49,10 @@ public class JobApplication {
 		this.expectedSalary = expectedSalary;
 	}
 
-	public JobApplication(String userName, int yearsOfExperience, int currentSalary, int expectedSalary) {
-		super();
-		this.userName = userName;
-		this.yearsOfExperience = yearsOfExperience;
-		this.currentSalary = currentSalary;
-		this.expectedSalary = expectedSalary;
-	}
-
-	public JobApplication() {
-		super();
-	}
-
 	@Override
 	public String toString() {
 		return "JobApplication [userName=" + userName + ", yearsOfExperience=" + yearsOfExperience + ", currentSalary="
 				+ currentSalary + ", expectedSalary=" + expectedSalary + "]";
 	}
-
+	
 }
